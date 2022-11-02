@@ -8,45 +8,54 @@ import ohos.agp.components.Component;
 import ohos.agp.components.TextField;
 import ohos.agp.window.dialog.ToastDialog;
 
-import java.util.ResourceBundle;
-
 public class LoginAbilitySlice extends AbilitySlice {
-    private Button button_zhuce;
-    private TextField name_zhuce,password_zhuce,password_queren;
+    private TextField username;
+    private TextField password;
+    private Button loginBtn;
+    private Button regBtn;
 
-    private ResourceBundle bundle;
+
     @Override
-    public void onStart(Intent intent) {
+    protected void onStart(Intent intent) {
         super.onStart(intent);
-        super.setUIContent(ResourceTable.Layout_ability_zhuce);
+        super.setUIContent(ResourceTable.Layout_login);
+
+        username = (TextField) findComponentById(ResourceTable.Id_login_username);
+        password = (TextField) findComponentById(ResourceTable.Id_login_password);
+
+        loginBtn = (Button) findComponentById(ResourceTable.Id_login_Btn);
+        regBtn = (Button) findComponentById(ResourceTable.Id_toRegBtn);
 
 
-        name_zhuce = (TextField) findComponentById(ResourceTable.Id_name_zhuce);
-        password_zhuce = (TextField) findComponentById(ResourceTable.Id_password_zhuce);
-
-        button_zhuce = (Button) findComponentById(ResourceTable.Id_login_btn2);
-
-        password_queren = (TextField) findComponentById(ResourceTable.Id_password_queren);
-
-
-    }
-
-    private void zhuce_login(){
-
-        // 为按钮设置点击回调
-        button_zhuce.setClickedListener(new Component.ClickedListener() {
+        /**
+         * 跳转到注册页面
+         */
+        regBtn.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-
-                if(!name.equals(null) && !name.equals("") && !password.equals(queren)){
-                    new ToastDialog(context).setText("密码不一致，请重新尝试！").show();
-                }else if (button_zhuce!=null && !name.equals(null)&& !name.equals("") && !password.equals(null) && !password.equals("") &&  password.equals(queren)){
-                    new ToastDialog(context).setText("注册成功！").show();
-                    present(new MainAbilitySlice(),new Intent());
-                }else{
-                    new ToastDialog(context).setText("请输入完整信息！").show();
+                if (regBtn != null) {
+                    present(new RegAbilitySlice(),
+                            new Intent());
                 }
             }
         });
-    };
+        /**
+         * 去登录
+         */
+        loginBtn.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                System.out.println(username.getText());
+                System.out.println(username);
+                if (loginBtn != null && username.getText().equals("212210731119") && password.getText().equals("nitaotao")) {
+                    present(new IndexAbilitySlice(), new Intent());
+                    new ToastDialog(getContext()).setText("登录成功").show();
+                } else {
+                    new ToastDialog(getContext()).setText("用户名或密码错误").show();
+                }
+            }
+        });
+    }
+
+
 }
