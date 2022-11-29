@@ -13,8 +13,8 @@
         ohos:height="match_content"
         ohos:width="850px"
         ohos:layout_alignment="horizontal_center"
-        ohos:left_margin="140px"
-        ohos:text="涛涛的登录页面"
+        ohos:left_margin="240px"
+        ohos:text="登录"
         ohos:text_color="#ffffff"
         ohos:text_size="32fp"/>
 
@@ -78,8 +78,8 @@
             ohos:text="登录"
             ohos:text_size="20fp"
             ohos:padding="10vp"
-            ohos:text_color="#FFFFFF"
-            ohos:background_element="#0EAB8D"
+            ohos:text_color="#000000"
+            ohos:background_element="#EAEDED"
             ohos:layout_alignment="horizontal_center"/>
 
         <Button
@@ -89,8 +89,8 @@
             ohos:text="注册"
             ohos:text_size="20fp"
             ohos:padding="10vp"
-            ohos:text_color="#FFFFFF"
-            ohos:background_element="#0EAB8D"
+            ohos:text_color="#000000"
+            ohos:background_element="#EAEDED"
             ohos:layout_alignment="horizontal_center"
             ohos:left_margin="160px"/>
     </DirectionalLayout>

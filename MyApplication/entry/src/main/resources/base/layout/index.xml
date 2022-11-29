@@ -3,22 +3,159 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:orientation="vertical"
-    ohos:background_element="#143255">
+    ohos:background_element="#143255"
+    ohos:orientation="vertical">
+
+    <Component
+        ohos:height="300px"
+        />
 
     <Text
-        ohos:width="350vp"
-        ohos:height="match_parent"
-        ohos:text="Hello World!"
-        ohos:text_size="28fp"
-        ohos:text_color="#ffffff"
-        ohos:italic="true"
-        ohos:text_weight="700"
-        ohos:text_font="serif"
-        ohos:multiple_lines="true"
-        ohos:max_text_lines="3"
+        ohos:height="match_content"
+        ohos:width="850px"
         ohos:layout_alignment="horizontal_center"
-        ohos:text_alignment="center"
-        />
+        ohos:left_margin="140px"
+        ohos:text="欢迎回来！"
+        ohos:text_color="#ffffff"
+        ohos:text_size="32fp"/>
+
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="250px"
+        ohos:left_margin="80px"
+        ohos:text="id"
+        ohos:text_color="#ffffff"
+        ohos:text_size="24fp"
+        ohos:top_margin="100px"/>
+
+    <Text
+        ohos:id="$+id:index_id"
+        ohos:height="match_content"
+        ohos:width="600px"
+        ohos:background_element="#EAEDED"
+        ohos:layout_alignment="horizontal_center"
+        ohos:left_margin="100px"
+        ohos:padding="30px"
+        ohos:text_color="#708090"
+        ohos:text_size="18fp"
+        ohos:text="1"
+
+        ohos:top_margin="-95px"/>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="250px"
+        ohos:left_margin="80px"
+        ohos:text="用户名"
+
+        ohos:text_color="#ffffff"
+        ohos:text_size="24fp"
+        ohos:top_margin="100px"/>
+
+    <Text
+        ohos:id="$+id:index_username"
+        ohos:height="match_content"
+        ohos:width="600px"
+        ohos:text="ntt"
+
+        ohos:background_element="#EAEDED"
+        ohos:layout_alignment="horizontal_center"
+        ohos:left_margin="100px"
+        ohos:padding="30px"
+        ohos:text_color="#708090"
+        ohos:text_size="18fp"
+        ohos:top_margin="-95px"/>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="250px"
+        ohos:left_margin="80px"
+        ohos:text="密码"
+        ohos:text_color="#ffffff"
+        ohos:text_size="24fp"
+        ohos:top_margin="100px"/>
+
+    <Text
+        ohos:id="$+id:index_password"
+        ohos:height="match_content"
+        ohos:width="600px"
+        ohos:background_element="#EAEDED"
+        ohos:layout_alignment="horizontal_center"
+        ohos:left_margin="100px"
+        ohos:padding="30px"
+        ohos:text="123"
+
+        ohos:text_color="#708090"
+        ohos:text_size="18fp"
+        ohos:top_margin="-95px"/>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="250px"
+        ohos:left_margin="80px"
+        ohos:text="昵称"
+        ohos:text_color="#ffffff"
+        ohos:text_size="24fp"
+        ohos:top_margin="100px"/>
+
+    <Text
+        ohos:id="$+id:index_name"
+        ohos:height="match_content"
+        ohos:width="600px"
+        ohos:text="涛涛"
+
+        ohos:background_element="#EAEDED"
+        ohos:layout_alignment="horizontal_center"
+        ohos:left_margin="100px"
+        ohos:padding="30px"
+        ohos:text_color="#708090"
+        ohos:text_size="18fp"
+        ohos:top_margin="-95px"/>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="250px"
+        ohos:left_margin="80px"
+        ohos:text="年龄"
+        ohos:text_color="#ffffff"
+        ohos:text_size="24fp"
+        ohos:top_margin="100px"/>
+
+    <Text
+        ohos:id="$+id:index_age"
+        ohos:height="match_content"
+        ohos:width="600px"
+        ohos:text="23"
+
+        ohos:background_element="#EAEDED"
+        ohos:layout_alignment="horizontal_center"
+        ohos:left_margin="100px"
+        ohos:padding="30px"
+        ohos:text_color="#708090"
+        ohos:text_size="18fp"
+        ohos:top_margin="-95px"/>
+    <Text
+        ohos:height="match_content"
+        ohos:width="250px"
+        ohos:left_margin="80px"
+        ohos:text="性别"
+        ohos:text_color="#ffffff"
+        ohos:text_size="24fp"
+        ohos:top_margin="100px"/>
+
+    <Text
+        ohos:id="$+id:index_sex"
+        ohos:height="match_content"
+        ohos:width="600px"
+        ohos:text="男"
+
+        ohos:background_element="#EAEDED"
+        ohos:layout_alignment="horizontal_center"
+        ohos:left_margin="100px"
+        ohos:padding="30px"
+        ohos:text_color="#708090"
+        ohos:text_size="18fp"
+        ohos:top_margin="-95px"/>
 
 </DirectionalLayout>
